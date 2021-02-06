@@ -1,72 +1,78 @@
 <template>
-  <div class="mb-1 bg-muted text-white rounded p-1 shapes-vo">
-    <div class="large-12 medium-12 small-12 cell">
-      <input accept="image/png,image/jpg,image/jpeg" type="file" id="files" ref="files" multiple v-on:change="handleFilesUpload()"/>
-    <button class="btn btn-dark pt-2" v-on:click="submitFiles()">Submit</button>
-    </div>
-  </div>
+	<div class="d-flex flex-column">
+	<b-form-file
+			accept=".jpg,.png,.jpeg"
+			v-model="file"
+			:state="Boolean(file)"
+			@change="handleFileUpload"
+			placeholder="Choose a file or drop it here..."
+			drop-placeholder="Drop file here..."
+		></b-form-file>
+
+		<div v-if="file" class="d-flex flex-row">
+			<img width="200px" :src="path" alt="imagen_upload"/>
+			<img v-show="resp" width="200px" :src="resp" alt="imagen_modify"/>
+			<button class="btn btn-secondary m-2" @click="removeImage">Remove</button>
+		</div>
+		<div class="my-4">
+			<b-form-select v-model="filter" :options="options"></b-form-select>
+		</div>
+		<button class="btn btn-secondary m-2" @click="submitFile()">Submit</button>
+	</div>
 </template>
 
 <script>
-
 import axios from 'axios'
 
 export default {
-    /*
-      Defines the data used by the component
-    */
-    data(){
-      return {
-        files: ''
-      }
-    },
+	data: function () {
+		return {
+			file: '',
+			path: '',
+			resp: '',
+			host: 'http://localhost:3000/',
+			filter: 'gray',
+			options: [
+				{ value: 'gray', text: 'Color Gray' },
+				{ value: 'canny', text: 'Bordes canny' },
+				{ value: 'circle', text: 'Detectar circulos' },
+				{ value: 'lines', text: 'Detectar lineas' },
+			]
+		}
+	},
+	methods: {
+		submitFile: async function () {
+			if (!this.file) return;
 
-    methods: {
-      /*
-        Submits all of the files to the server
-      */
-      submitFiles(){
-        /*
-          Initialize the form data
-        */
-        let formData = new FormData();
+			let formData = new FormData();
+			formData.append('image', this.file)
+			let response = await axios ({
+				url: this.host + 'api/image/save/' + this.filter,
+				method: 'post',
+				data: formData,
+				headers: {'Content-Type': 'multipart/form-data' },
+			})
+			this.resp = this.host + response.data.float + '/' + response.data.name + '.' + response.data.extension;
+				
+		} ,
+		handleFileUpload: function(event) {
+			this.path = event.target.files[0];
+			let image = new Image();
+			let reader = new FileReader();
+			let vm = this;
 
-        /*
-          Iteate over any file sent over appending the files
-          to the form data.
-        */
-        for( var i = 0; i < this.files.length; i++ ){
-          let file = this.files[i];
-
-          formData.append('files[' + i + ']', file);
-        }
-
-        /*
-          Make the request to the POST /multiple-files URL
-        */
-        axios.post( '/api/image/save',
-          formData,
-          {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-          }
-        ).then(function(){
-          console.log('SUCCESS!!');
-        })
-        .catch(function(){
-          console.log('FAILURE!!');
-        });
-      },
-
-      /*
-        Handles a change on the file upload
-      */
-      handleFilesUpload(){
-        this.files = this.$refs.files.files;
-      }
-    }
-  }
+			reader.onload = (event) => {
+				vm.path = event.target.result;
+			}
+			reader.readAsDataURL(this.path);
+			
+		},
+		removeImage: function(event) {
+			this.file = '';
+			this.path = '';
+	     	} 
+	}
+}
 </script>
 
 <style scope>

@@ -17,8 +17,8 @@
 </template>
 
 <style>
-  @import url('../static/css/menu.css');
-  @import url('../static/icons/fontawesome/css/all.css');
+@import url('../static/css/menu.css');
+/*  @import url('../static/icons/fontawesome/css/all.css');*/
 
   .font {
     font-size: 16px;
