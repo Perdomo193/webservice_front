@@ -1,0 +1,20 @@
+@import url('./Fonts.css');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.fp1 {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.figu1 {
+  width: 300px;
+  height: auto;
+}
