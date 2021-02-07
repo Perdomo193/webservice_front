@@ -36,7 +36,7 @@ Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El fron
 
 ## Ejercicio 2
 
-Se cargan las coordenadas de las regiones de interes a resaltar en la imagen (ver Figura 2). El front-end envia al back-end las coordenadas, las cuales son almacenadas en la base de datos.
+Se cargan las coordenadas de las regiones de interes a resaltar en la imagen (ver Figura 2). El front-end envia al back-end las coordenadas, las cuales son almacenadas en la base de datos. El back-envia al cliente TCP el tipo de region de interes y sus coordenadas. El cliente TCP construye sobre una imagen las regiones de interes, y retorna la imagen procesada al back-end. El back-end almacena en el Storage la imagen procesada y envia al front-end la información de esta, vizualizandose la imagen procesada.
 
 <p align="center">Figura 3 Vista Arquitectura</p>
 
