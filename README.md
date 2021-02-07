@@ -18,7 +18,9 @@ El framework `VueJS` es implementado en el desarrollo front del servicio web, co
 
 ## Vistas
 
+<p style="text-align: justify">
 Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1, el cual muestra la Figura 1. En este se da click en `Browse` y seleccionamos a la imagen a procesar. En el selector definimos que tipo de procesamiento se aplicara a la imagen, comos se muestra en la Figura 2.
+</p>
 
 <p align="center">Figura 2</p>
 
