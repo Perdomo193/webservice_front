@@ -1,5 +1,6 @@
-# webdsc
+![](https://github.com/Perdomo193/webservice_front/blob/main/static/img/logo_vo.png)
 
+# Vision Online
 ## Build Setup
 
 ```bash
@@ -16,5 +17,5 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-![](https://github.com/Perdomo193/webservice_front/blob/main/static/img/logo_vo.png)
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
