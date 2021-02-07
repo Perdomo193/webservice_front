@@ -14,7 +14,7 @@
 
 ## Herramientas
 
-El framework VueJS** es implementado en el desarrollo front del servicio web. Se utiliza el marco de aplicación web NuxtJS**, el cual permite el renderizado en el servidor.
+El framework `VueJS` es implementado en el desarrollo front del servicio web, construido con `CSS3`, `HTML5` y `Bootstrap` . Se utiliza el marco de aplicación web NuxtJS**, el cual permite el renderizado en el servidor.
 
 ## Vistas
 
