@@ -32,7 +32,11 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 ## Ejercicio 1
 
-Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El front-end envia la imagen y sus datos al back-end, el back almacera en el Storage del equipo la image. Se selecciona en el front-end el tipo de proceso a aplicar en la imagen, por ejemplo: canny y findcircles, se envia esta información al back-end.
+Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El front-end envia la imagen y sus datos al back-end, el back almacena en el Storage del equipo la imagen. Se selecciona en el front-end el tipo de proceso a aplicar en la imagen, por ejemplo: canny y findcircles, y se envia esta información al back-end. El back-end el envia al cliente TCP, información de la imagen y el proceso a aplicar sobre esta. El cliente TCP procesa la imagen y retorna al back-end informacion de la imagen procesada. El back-end almacena en el Storage la imagen procesada y en la base de datos la informacion de las imagenes. Finalmente el back-end retorna al front-end información de la imagen procesada, vizualizandose en el navegador la imagen procesada. La Figura 3 describe el flujo de información entre componentes.
+
+## Ejercicio 2
+
+Se cargan las coordenadas de las regiones de interes a resaltar en la imagen (ver Figura 2). El front-end envia al back-end las coordenadas, las cuales son almacenadas en la base de datos.
 
 <p align="center">Figura 3 Vista Arquitectura</p>
 
