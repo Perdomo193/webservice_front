@@ -3,6 +3,10 @@
 # Vision Online
 ## Build Setup
 
+#### Install dependencies
+
+执行命令：`npm install marked`
+
 ```bash
 # install dependencies
 $ 'npm install'
