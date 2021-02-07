@@ -25,6 +25,6 @@ Figura 1
 
 
 Figura 2
-![(https://github.com/Perdomo193/images/blob/master/page_two.png)]
+![](https://github.com/Perdomo193/images/blob/master/page_two.png)
 
 
