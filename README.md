@@ -22,13 +22,18 @@ El framework `Vue JS` es implementado en el desarrollo front del servicio web, c
 
 Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1, el cual muestra la Figura 1. En este se da click en `Browse` y seleccionamos a la imagen a procesar. En el selector definimos que tipo de procesamiento se aplicara a la imagen, comos se muestra en la Figura 2.
 
-<p align="center">Figura 2</p>
+<p align="center">Figura 1</p>
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_one.png" alt="build status"></img></a></p>
 
 <p align="center">Figura 2</p>
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_two.png" alt="build status"></img></a></p>
+
+## Ejercicio 1
+
+
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_four.png" alt="build status"></img></a></p>
 
 
 
