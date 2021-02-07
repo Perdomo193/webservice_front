@@ -1,69 +1,61 @@
 <template>
-  <div class="mb-1 bg-muted text-white rounded p-1 shapes-vo">
-    <h3>Circle</h3>
-    <form action class="d-flex justify-content-between" @submit.prevent="send">
-      <div class="d-flex flex-column mx-2">
-        <h4>Center y</h4>
-        <input
-          v-model="cy"
-          class="form-input"
-          type="number"
-          id="circle_cy"
-          required
-          placeholder="Center y"
-        />
-      </div>
-      <div class="d-flex flex-column">
-        <h4>Center x</h4>
-        <input
-          v-model="cx"
-          class="form-input"
-          type="number"
-          id="circle_cx"
-          placeholder="Center x"
-        />
-      </div>
-      <div class="d-flex flex-column">
-        <h4>Radio</h4>
-        <input
-          v-model="cr"
-          class="form-input"
-          type="number"
-          id="circle_cr"
-          placeholder="Radio"
-        />
-      </div>
-      <input class="btn btn-dark pt-2" type="submit" value="Send"/>
-    </form>
-  </div>
+	<div class="div">
+		<b-container>
+			<b-row>
+				<b-col class="text-left">
+					<h3 class="mt-4">Circle</h3>
+				</b-col>
+				<b-col>
+					<b-container>
+						<b-row>
+							<label for="circle_c_1">Center X</label>
+						</b-row>
+						<b-row>
+							<b-form-input id="circle_c_1" style="" type="number" v-model="circle.c_1" placeholder="Center X"></b-form-input>
+						</b-row>
+					</b-container>
+				</b-col>
+				<b-col>
+					<b-container >
+						<b-row>
+							<label for="circle_c_2">Center Y</label>
+						</b-row>
+						<b-row>
+							<b-form-input for="circle_c_2" style="" type="number" v-model="circle.c_2" placeholder="Center X"></b-form-input>
+						</b-row>
+					</b-container>
+				</b-col>
+				<b-col>
+					<b-container>
+						<b-row>
+							<label for="circle_c_3">Radio</label>
+						</b-row>
+						<b-row>
+							<b-form-input  for="input-none" style="" type="number" v-model="circle.c_3" placeholder="Center X"></b-form-input>
+						</b-row>
+					</b-container>
+				</b-col>
+				<b-col class="pt-4">	
+					<b-button variant="success" @click="send">Button</b-button>
+				</b-col>
+			</b-row>
+		</b-container>
+	</div>
 </template>
 
 <script>
-
 import axios from 'axios'
 
 export default {
-	name: "VoCircle",
+	name: 'VoCircle',
 	data: function () {
 		return {
-			cx: 0,
-			cy: 0,
-			cr: 0,
+			circle: { c_1: 0, c_2: 0, c_3: 0, action: 'dcircle'},
 		};
 	},
 	methods: {
 		send: async function () {
-			let response = await axios ({
-				method: 'post',
-				url: 'http://localhost:3000/api/shape/all',
-				data: {
-					'c_1': this.cx,
-					'c_2': this.cy,
-					'c_3': this.cr,
-					'shape_id': 'circle'
-				},
-				headers: {'Content-Type': 'application/json'},
-			})
+			this.$emit('dataSend', this.circle);
 		},
 	},
 };
@@ -71,8 +63,7 @@ export default {
 
 <style scope>
 .shapes-vo:hover {
-  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
-
 </style>
 

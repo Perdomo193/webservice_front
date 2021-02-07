@@ -1,6 +1,6 @@
 <template>
 	<div class="d-flex flex-column">
-	<b-form-file
+		<b-form-file
 			accept=".jpg,.png,.jpeg"
 			v-model="file"
 			:state="Boolean(file)"
