@@ -6,7 +6,7 @@ La webservice de la prueba tecnica, la cual está diseñada en una arquitectura 
 Dentro de la capa del “modelo” se utiliza un servicio RESTful (API) para obtener los datos.
 En la capa “vista” se utiliza HTML5, CSS3 y Framework Bootstrap.
 Finalmente, la capa “controlador” usa Framework Vue JS.
-Estas características permiten compartirse como código multi-plataforma
+Estas características permiten compartirse como código multi-plataforma.
 
 ## Dependencias
 
