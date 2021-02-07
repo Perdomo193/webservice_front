@@ -1,15 +1,13 @@
 ![](https://github.com/Perdomo193/webservice_front/blob/main/static/img/logo_vo.png)
 
-# Vision Online
-## Build Setup
+# Vision Online Prueba Tecnica - Pablo Alejandro Perdomo
 
-#### Install dependencies
+## Dependencias
+
+#### Instalar
 `npm install`
 
-#### Serve with hot reload at localhost:3000
-`npm run dev`
-
-#### build for production and launch server
+#### Iniciar servidor en localhost:8000
 `npm run build`
 `npm run start`
 
