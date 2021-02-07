@@ -34,7 +34,7 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El front-end envia la imagen y sus datos al back-end, el back almacera en el Storage del equipo la image. Se selecciona en el front-end el tipo de proceso a aplicar en la imagen, por ejemplo: canny y findcircles, se envia esta información al back-end.
 
-<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_four.png" alt="build status"></img></a></p>
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_five.png" alt="build status"></img></a></p>
 
 
 
