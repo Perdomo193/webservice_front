@@ -12,4 +12,8 @@
 
 `npm run start`
 
+## Herramientas
+
+El framework Vue JS es implementado en el desarrollo front del servicio web.
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
