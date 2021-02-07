@@ -18,8 +18,9 @@ El framework VueJS** es implementado en el desarrollo front del servicio web. Se
 
 ## Vistas
 
-Se tiene un menu de navegación, como se muestra en la Figura 
+Se tiene un menu de navegación, como se muestra en la Figura 1
 
+Figura 1
 ![](https://github.com/Perdomo193/images/blob/master/page_one.png)
 
 
