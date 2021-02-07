@@ -14,6 +14,13 @@
 
 ## Herramientas
 
-El framework Vue JS es implementado en el desarrollo front del servicio web.
+El framework VueJS** es implementado en el desarrollo front del servicio web. Se utiliza el marco de aplicación web NuxtJS**, el cual permite el renderizado en el servidor.
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Vistas
+
+Se tiene un menu de navegación, como se muestra en la Figura 
+
+![](https://drive.google.com/file/d/1owWxFxbjPcn0QH343UN7XSk_QR1YYZc4/view?usp=sharing)
+
+
+
