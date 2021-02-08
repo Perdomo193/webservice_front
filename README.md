@@ -23,7 +23,7 @@ El framework `Vue JS` es implementado en el desarrollo front del servicio web, i
 
 ## Vistas
 
-Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1, el cual muestra la Figura 1. En este se da click en `Browse` y seleccionamos a la imagen a procesar. En el selector definimos que tipo de procesamiento se aplicara a la imagen, comos se muestra en la Figura 2.
+Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1 referido al ejercicio 1, y el boton Exercise 2 referido al ejercicio 2. En la ventana Exercise 1 se da click en `Browse` y se selecciona la imagen a procesar. En el selector se define el tipo de procesamiento a aplicar sobre la imagen, como se muestra en la Figura 2.
 
 <h3 align="center">Figura 1 Vista Ejercicio 1</h3>
 
