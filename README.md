@@ -32,7 +32,7 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_two.png" alt="build status"></img></a></p>
 
-## Ejercicio 1
+## Ejercicios
 
 <h3 align="center">Ejercicio 1</h3>
 
@@ -40,7 +40,7 @@ Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El fron
 
 Nota: Se utilizo un cliente TCP como suplente de HALCON en el procesamiento de la imagen, dado que la licencia expiro en el primer dia de uso. 
 
-## Ejercicio 2
+<h3 align="center">Ejercicio 2</h3>
 
 Se cargan las coordenadas de las regiones de interes a resaltar y la imagen a procesar (ver Figura 2). El front-end envia al back-end las coordenadas e imagen, en la base de datos se almacenan coordenadas y en el Storage la imagen a procesar. El back-envia al cliente TCP el tipo de region de interes y sus coordenadas. El cliente TCP construye sobre una imagen las regiones de interes, y retorna la imagen procesada al back-end. El back-end almacena en el Storage la imagen procesada y envia al front-end la información de esta, vizualizandose la imagen procesada. La Figura 3 describe el flujo de información entre componentes.
 
