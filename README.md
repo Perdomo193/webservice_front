@@ -2,7 +2,7 @@
 
 <h2 align="center">Vision Online Prueba Tecnica - Pablo Alejandro Perdomo</h2>
 
-La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el modelo MVC (Modelo Vista Controlador) que permite reutilizar el código y reduce el uso del código del servidor. En la capa “vista” se utiliza HTML5, CSS3 y Framework Bootstrap.Finalmente, la capa “controlador” usa Framework Vue JS.Estas características permiten compartirse como código multi-plataforma.
+La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el modelo MVC (Modelo Vista Controlador) que permite reutilizar el código y reduce el uso del código del servidor. En la capa “vista” se utiliza HTML5, CSS3 y Framework Bootstrap. Finalmente, la capa “controlador” usa Framework Vue JS. Estas características permiten compartirse como código multi-plataforma.
   
 ## Dependencias
 
@@ -16,7 +16,7 @@ La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el 
 
 ## Herramientas
 
-El framework `Vue JS` es implementado en el desarrollo front del servicio web, construido con `CSS3`, `HTML5` y `Bootstrap` . Se utiliza el marco de aplicación web `Nuxt JS`, el cual permite el renderizado en el servidor.
+El framework `Vue JS` es implementado en el desarrollo front del servicio web, incluyendo `HTML5` y `Bootstrap` . Se utiliza el marco de aplicación web `Nuxt JS`, en el renderizado por servidor.
 
 <p align="center"><a href="#"><img width="450px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_six.png" alt="build status"></img></a></p>
 
@@ -33,6 +33,8 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_two.png" alt="build status"></img></a></p>
 
 ## Ejercicio 1
+
+<h3 align="center">Ejercicio 1</h3>
 
 Se carga la imagen a procesar en la vista de navegación (ver Figura 1). El front-end envia la imagen y sus datos al back-end, el back almacena en el Storage del equipo la imagen. Se selecciona en el front-end el tipo de proceso a aplicar en la imagen, por ejemplo: canny y findcircles, y se envia esta información al back-end. El back-end envia al cliente TCP, información de la imagen y el proceso a aplicar sobre esta. El cliente TCP procesa la imagen y retorna al back-end informacion de la imagen procesada. El back-end almacena en el Storage la imagen procesada y en la base de datos la informacion de las imagenes. Finalmente el back-end retorna al front-end información de la imagen procesada, vizualizandose en el navegador esta imagen. La Figura 3 describe el flujo de información entre componentes.
 
