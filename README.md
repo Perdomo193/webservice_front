@@ -33,7 +33,7 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_two.png" alt="build status"></img></a></p>
 
-En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3. Luego se ingresa las coordenadas de la region a procesar: 
+En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3. Luego se ingresan las coordenadas de la region a procesar: 
 
 `Circle`: Se ingresa el punto central o centro de masa de la region, a traves de las coordendas `Center X` y `Center Y`; además se ingresa el valor del radio en `Radio`. 
 
@@ -45,7 +45,7 @@ En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a pro
 
 Luego de ingresar los valores de las coordenadas, se da click en `Botton`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
 
-<h3 align="center">Figura 2 Vista Ejercicio 3</h3>
+<h3 align="center">Figura 3 Vista Ejercicio 3</h3>
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_nine.png" alt="build status"></img></a></p>
 
