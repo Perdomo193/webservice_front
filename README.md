@@ -23,7 +23,7 @@ El framework `Vue JS` es implementado en el desarrollo front del servicio web, i
 
 ## Vistas
 
-Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1 referido al ejercicio 1, y el boton Exercise 2 referido al ejercicio 2. En la ventana Exercise 1 se da click en `Browse` y se selecciona la imagen a procesar. En el selector se define el tipo de procesamiento a aplicar sobre la imagen, como se muestra en la Figura 2.
+Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1 referido al ejercicio 1, y el boton Exercise 2 referido al ejercicio 2. En la ventana Exercise 1 se da click en `Browse` y se selecciona la imagen a procesar. En el selector se define el tipo de procesamiento a aplicar sobre la imagen, como se muestra en la Figura 2. 
 
 <h3 align="center">Figura 1 Vista Ejercicio 1</h3>
 
@@ -32,6 +32,18 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 <h3 align="center">Figura 2 Vista Ejercicio 2</h3>
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_two.png" alt="build status"></img></a></p>
+
+En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3. Luego se ingresa las coordenadas de la region a procesar: 
+
+`Circle`: Se ingresa el punto central o centro de masa de la region, a traves de las coordendas `Center X` y `Center Y`; además se ingresa el valor del radio en `Radio`. 
+
+`Hexagon`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Center X` y `Center Y`; además se ingresa el valor del aportema en `Apotema`.
+
+`Triangle`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Center X` y `Center Y`; además se ingresa el valor de la base en `Base` y la altura en `Height`.
+
+`Rectangle`: Se ingresa el valor del vertice superior izquierdo de la region en `Vertice_ax` para el eje X y `Vertice_ay` para el eje Y. Se ingresa el valor del vertice inferior derecho de la region en `Vertice_bx` para el eje X y `Vertice_by` para el eje Y.
+
+Luego de ingresar los valores de las coordenadas, se da click en `Botton`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
 
 <h3 align="center">Figura 2 Vista Ejercicio 3</h3>
 
