@@ -2,7 +2,7 @@
 
 <h2 align="center">Vision Online Prueba Tecnica - Pablo Alejandro Perdomo</h2>
 
-La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el modelo MVC (Modelo Vista Controlador) que permite reutilizar el código y reduce el uso del código del servidor. En la capa “vista” se utiliza `HTML5`, `CSS3` y Framework `Bootstrap`. Finalmente, la capa “controlador” usa Framework `Vue JS`. Estas características permiten compartirse como código multi-plataforma.
+La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el modelo MVC (Modelo Vista Controlador) que permite reutilizar el código y reduce el uso del código del servidor. En la capa “vista” se utiliza `HTML5` y Framework `Bootstrap`. Finalmente, la capa “controlador” usa Framework `Vue JS`. Estas características permiten compartirse como código multi-plataforma.
   
 ## Dependencias
 
@@ -10,6 +10,7 @@ La webservice de la prueba tecnica, está diseñada en una arquitectura bajo el 
 `npm install`
 
 #### Iniciar servidor en localhost:8000
+
 `npm run build`
 
 `npm run start`
