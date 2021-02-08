@@ -9,7 +9,6 @@
 					<vo-rectangle @dataSend="processImage" class="py-2"></vo-rectangle>
 				</b-col>
 			</b-row>
-{{ action  }}
 			<b-col class="text-center">
 				<b-container>
 					<b-row>
@@ -30,10 +29,10 @@
 					</b-row>
 					<b-row>
 						<b-col>
-							<img v-show="file" width="200px" :src="file" alt="imagen_upload"/>
+							<img v-show="path" width="200px" :src="path" alt="imagen_upload"/>
 						</b-col>
 						<b-col>
-							<img v-show="path" width="200px" :src="path" alt="imagen_upload"/>
+							<img v-show="disp" id="image-response" width="200px" :src="disp" alt="imagen_upload"/>
 						</b-col>
 					</b-row>
 				</b-container>
@@ -61,12 +60,26 @@ export default {
 		return {
 			file: '',
 			path: '',
+			disp: '',
 			host: 'http://localhost:3000/',
+			info: {}
 		};
 	},
 	methods: {
-		processImage: function(data) {
-			this.action = data;
+		processImage: async function(data) {
+			if (!this.file) {
+				return;
+			}
+			let response = await axios ({
+				url: this.host + 'api/shape/all',
+				method: 'post',
+				data: { data: data, image: this.info },
+				headers: {'Content-Type': 'application/json'},
+			});
+
+			this.disp = this.host + response.data.float + '/' + response.data.name + '.' + response.data.extension;
+			var el = document.getElementById('image-response');
+			el.src = this.disp + '?' + new Date().getTime();
 		},
 		submitFile: async function () {
 			if (!this.file) {
@@ -81,7 +94,7 @@ export default {
 				data: formData,
 				headers: {'Content-Type': 'multipart/form-data'},
 			});
-			console.log(response.data);
+			this.info = response.data
 		},
 		handleFileUpload: function(event) {
 			this.path = event.target.files[0];
@@ -100,6 +113,7 @@ export default {
 		removeImage: function(event) {
 			this.file = '';
 			this.path = '';
+			this.info = {};
 	     	}
 	},
 };

@@ -60,7 +60,7 @@ export default {
 	name: "VoTriangle",
 	data: function () {
 		return {
-			triangle: { c_1: 0, c_2: 0, c_3: 0, c_4: 0, action: 'dtriangle'},
+			triangle: { c_1: 0, c_2: 0, c_3: 0, c_4: 0, action: 'dtriangle', shape_id: 2},
 		};
 	},
 	methods: {
