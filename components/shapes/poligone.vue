@@ -50,7 +50,7 @@ export default {
 	name: "VoPoligone",
 	data: function () {
 		return {
-			hexagon: { c_1: 0, c_2: 0, c_3: 0, action: 'drectangle'},
+			hexagon: { c_1: 0, c_2: 0, c_3: 0, action: 'dhexagon', shape_id: 4 },
 		};
 	},
 	methods: {

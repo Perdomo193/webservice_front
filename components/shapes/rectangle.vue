@@ -3,7 +3,7 @@
 		<b-container>
 			<b-row class="text-left">
 				<b-col>
-					<h3 class="mt-4">Retangle</h3>
+					<h3 class="mt-4">Rectangle</h3>
 				</b-col>
 				<b-col>
 					<b-container>
@@ -60,7 +60,7 @@ export default {
 	name: "VoRectangle",
 	data: function () {
 		return {
-			rectangle: { c_1: 0, c_2: 0, c_3: 0, c_4: 0, action: 'drectangle'},
+			rectangle: { c_1: 0, c_2: 0, c_3: 0, c_4: 0, action: 'drectangle', shape_id: 1},
 		};
 	},
 	methods: {

@@ -50,7 +50,7 @@ export default {
 	name: 'VoCircle',
 	data: function () {
 		return {
-			circle: { c_1: 0, c_2: 0, c_3: 0, action: 'dcircle'},
+			circle: { c_1: 0, c_2: 0, c_3: 0, action: 'dcircle', shape_id: 3},
 		};
 	},
 	methods: {
