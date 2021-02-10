@@ -33,15 +33,15 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_15.png" alt="build status"></img></a></p>
 
-En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3. Luego se ingresan las coordenadas de la region a procesar: 
+En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3, 4, 5 y 6. Luego se ingresan las coordenadas de la region a procesar: 
 
-`Circle`: Se ingresa el punto central o centro de masa de la region, a traves de las coordendas `Center X` y `Center Y`; además se ingresa el valor del radio en `Radio`. 
+`Circulo`: Se ingresa el punto central o centro de masa de la region, a traves de las coordendas `Centro X` y `Centro Y`; además se ingresa el valor del radio en `Radio`. 
 
-`Hexagon`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Center X` y `Center Y`; además se ingresa el valor del aportema en `Apotema`.
+`Hexagono`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Centro X` y `Centro Y`; además se ingresa el valor del aportema en `Apotema`.
 
-`Triangle`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Center X` y `Center Y`; además se ingresa el valor de la base en `Base` y la altura en `Height`.
+`Triangulo`: Se ingresa el centro de masa de la region, a traves de las coordenadas `Centro X` y `Centro Y`; además se ingresa el valor de la base en `Base` y la altura en `Altura`.
 
-`Rectangle`: Se ingresa el valor del vertice superior izquierdo de la region en `Vertice_ax` para el eje X y `Vertice_ay` para el eje Y. Se ingresa el valor del vertice inferior derecho de la region en `Vertice_bx` para el eje X y `Vertice_by` para el eje Y.
+`Rectangulo`: Se ingresa el valor del vertice superior izquierdo de la region en `Vertice_aX` para el eje X y `Vertice_aY` para el eje Y. Se ingresa el valor del vertice inferior derecho de la region en `Vertice_bX` para el eje X y `Vertice_bY` para el eje Y.
 
 Luego de ingresar los valores de las coordenadas, se da click en `Botton`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
 
@@ -73,7 +73,7 @@ Nota: Se utilizo un cliente TCP como suplente de HALCON en el procesamiento de l
 
 Se cargan las coordenadas de las regiones de interes a resaltar y la imagen a procesar (ver Figura 2). El front-end envia al back-end las coordenadas e imagen, en la base de datos se almacenan coordenadas y en el Storage la imagen a procesar. El back-envia al cliente TCP el tipo de region de interes y sus coordenadas. El cliente TCP construye sobre una imagen las regiones de interes, y retorna la imagen procesada al back-end. El back-end almacena en el Storage la imagen procesada y envia al front-end la información de esta, vizualizandose la imagen procesada. La Figura 3 describe el flujo de información entre componentes.
 
-<p align="center">Figura 3 Vista Arquitectura</p>
+<p align="center">Figura 7 Vista Arquitectura</p>
 
 <p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_five.png" alt="build status"></img></a></p>
 
