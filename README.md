@@ -75,7 +75,7 @@ Se cargan las coordenadas de las regiones de interes a resaltar y la imagen a pr
 
 <p align="center">Figura 7 Vista Arquitectura</p>
 
-<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_five.png" alt="build status"></img></a></p>
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_20.png" alt="build status"></img></a></p>
 
 ## Links Back-end y Cliente TCP
 
