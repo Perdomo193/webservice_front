@@ -79,7 +79,7 @@ Se cargan las coordenadas de las regiones de interes a resaltar y la imagen a pr
 
 ## Links Back-end y Servicio TCP
 
-Debe ingresar al `cliente TCP` en el siguiente link:
+Debe ingresar al `servicio TCP` en el siguiente link:
 
 https://github.com/Perdomo193/webservice_tcp
 
