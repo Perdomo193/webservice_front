@@ -27,7 +27,7 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 <h3 align="center">Figura 1 Vista Ejercicio 1</h3>
 
-<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_one.png" alt="build status"></img></a></p>
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_10.png" alt="build status"></img></a></p>
 
 <h3 align="center">Figura 2 Vista Ejercicio 2</h3>
 
