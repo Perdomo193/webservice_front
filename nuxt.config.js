@@ -1,41 +1,29 @@
 export default {
-  // Global page headers (https://go.nuxtjs.dev/config-head)
-  head: {
-    title: 'webservice vo',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
-
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-	  '@/plugins/bootstrap-vue.js',
-  ],
-
-  // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
-
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-  ],
-
-  // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-  ],
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-  },
+	head: {
+		title: 'webservice vo',
+		meta: [
+			{ charset: 'utf-8' },
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{ hid: 'description', name: 'description', content: '' }
+		],
+		link: [
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel:'preconnect', href:'https://fonts.gstatic.com'},
+			{ href:'https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400&display=swap', rel:'stylesheet' }
+		]
+	},
+	plugins: [
+	        '@/plugins/bootstrap-vue.js',
+	],
 	server: {
 		port: 8000
-	}
+	},
+	css: [],
+	components: true,
+	buildModules: [],
+	modules: [],
+	build: {},
+	
+	
+	
 }

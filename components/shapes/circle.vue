@@ -2,13 +2,10 @@
 	<div class="div">
 		<b-container>
 			<b-row>
-				<b-col class="text-left">
-					<h3 class="mt-4">Circle</h3>
-				</b-col>
 				<b-col>
 					<b-container>
 						<b-row>
-							<label for="circle_c_1">Center X</label>
+							<label for="circle_c_1">Centro X</label>
 						</b-row>
 						<b-row>
 							<b-form-input id="circle_c_1" style="" type="number" v-model="circle.c_1" placeholder="Center X"></b-form-input>
@@ -18,7 +15,7 @@
 				<b-col>
 					<b-container >
 						<b-row>
-							<label for="circle_c_2">Center Y</label>
+							<label for="circle_c_2">Centro Y</label>
 						</b-row>
 						<b-row>
 							<b-form-input for="circle_c_2" style="" type="number" v-model="circle.c_2" placeholder="Center X"></b-form-input>
@@ -36,7 +33,7 @@
 					</b-container>
 				</b-col>
 				<b-col class="pt-4">	
-					<b-button variant="success" @click="send">Button</b-button>
+					<b-button variant="success" @click="send">Aplicar</b-button>
 				</b-col>
 			</b-row>
 		</b-container>

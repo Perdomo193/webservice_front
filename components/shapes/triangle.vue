@@ -3,12 +3,9 @@
 		<b-container>
 			<b-row class="text-left">
 				<b-col>
-					<h3 class="mt-4">Triangle</h3>
-				</b-col>
-				<b-col>
 					<b-container>
 						<b-row>
-							<label for="triangle_c_1">Center X</label>
+							<label for="triangle_c_1">Centro X</label>
 						</b-row>
 						<b-row>
 							<b-form-input id="triangle_c_1" style="" type="number" v-model="triangle.c_1" placeholder="Center X"></b-form-input>
@@ -18,7 +15,7 @@
 				<b-col>
 					<b-container >
 						<b-row>
-							<label for="triangle_c_2">Center Y</label>
+							<label for="triangle_c_2">Centro Y</label>
 						</b-row>
 						<b-row>
 							<b-form-input for="triangle_c_2" style="" type="number" v-model="triangle.c_2" placeholder="Center X"></b-form-input>
@@ -38,7 +35,7 @@
 				<b-col>
 					<b-container>
 						<b-row>
-							<label for="triangle_c_3">Heigth</label>
+							<label for="triangle_c_3">Altura</label>
 						</b-row>
 						<b-row>
 							<b-form-input  for="input-none" style="" type="number" v-model="triangle.c_4" placeholder="Center X"></b-form-input>
@@ -46,7 +43,7 @@
 					</b-container>
 				</b-col>
 				<b-col class="pt-4 float-right">	
-					<b-button @click="send" variant="success">Button</b-button>
+					<b-button @click="send" variant="success">Aplicar</b-button>
 				</b-col>
 			</b-row>
 		</b-container>
