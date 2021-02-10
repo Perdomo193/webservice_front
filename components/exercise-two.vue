@@ -1,44 +1,48 @@
 <template>
-	<div class="container">
-		<b-container>
-			<b-row class="text-center">
+	<section id="shapes">
+		<b-container class="bv-example-row">
+			<b-row>
 				<b-col>
-					<vo-circle @dataSend="processImage" class="py-2"></vo-circle>
-					<vo-poligone @dataSend="processImage" class="py-2"></vo-poligone>
-					<vo-triangle @dataSend="processImage" class="py-2"></vo-triangle>
-					<vo-rectangle @dataSend="processImage" class="py-2"></vo-rectangle>
-				</b-col>
+					<b-form-file
+						accept=".jpg,.png,.jpeg"
+						v-model="file"
+						:state="Boolean(file)"
+						@change="handleFileUpload"
+						placeholder="Choose a file or drop it here..."
+						drop-placeholder="Drop file here..."
+					></b-form-file>
+ 				</b-col>
 			</b-row>
-			<b-col class="text-center">
-				<b-container>
-					<b-row>
-						<b-col>
-							<b-form-file
-							       accept=".jpg,.png,.jpeg"
-							       v-model="file"
-							       id="fileq"
-							       :state="Boolean(file)"
-							       @change="handleFileUpload"
-							       placeholder="Choose file"
-							       drop-placeholder="Drop file here...">
-							</b-form-file>
-						</b-col>
-						<b-col>
-							<b-button @click="removeImage">Remove</b-button>
-						</b-col>
-					</b-row>
-					<b-row>
-						<b-col>
-							<img v-show="path" width="200px" :src="path" alt="imagen_upload"/>
-						</b-col>
-						<b-col>
-							<img v-show="disp" id="image-response" width="200px" :src="disp" alt="imagen_upload"/>
-						</b-col>
-					</b-row>
-				</b-container>
-			</b-col>
 		</b-container>
-	</div>
+		<div class="d-flex flex-row justify-content-center">
+			<div class="mx-3 flex-fill flex-column d-flex justify-content-center">
+				<h5 class="p-3 text-center">Imagen a procesar</h5>
+				<div class="d-flex justify-content-center">
+					<img v-show="file" width="200px" :src="path" alt="imagen_upload"/>
+				</div>
+			</div>
+			<div class="my-2 mx-3 flex-fill flex-column d-flex justify-content-center">
+				<h5 class="my-2 p-3 text-center">Imagen procesada</h5>
+				<div class="d-flex justify-content-center">
+					<img v-show="disp" width="200px" id="image-response" :src="disp" alt="imagen_modify"/>
+				</div>
+			</div>
+		</div>
+		<b-tabs content-class="mt-2" class="mx-5">
+			<b-tab title="Hexagono" active>
+				<vo-poligone @dataSend="processImage" class="py-2"></vo-poligone>
+			</b-tab>
+			<b-tab title="Circulo">
+				<vo-circle @dataSend="processImage" class="py-2"></vo-circle>
+			</b-tab>
+			<b-tab title="triangulo">
+				<vo-triangle @dataSend="processImage" class="py-2"></vo-triangle>
+			</b-tab>
+			<b-tab title="rectangulo">
+				<vo-rectangle @dataSend="processImage" class="py-2"></vo-rectangle>
+			</b-tab>
+		</b-tabs>	
+	</section>
 </template>
 
 <script>
@@ -50,6 +54,7 @@ import VoTriangle from "./shapes/triangle";
 import axios from 'axios'
 
 export default {
+	name: 'VoShapes',
 	components: {
 		VoCircle,
 		VoPoligone,

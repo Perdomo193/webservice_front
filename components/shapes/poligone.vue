@@ -2,13 +2,10 @@
 	<div class="">
 		<b-container>
 			<b-row>
-				<b-col class="text-left">
-					<h3 class="mt-4">Hexagon</h3>
-				</b-col>
 				<b-col>
 					<b-container>
 						<b-row>
-							<label for="hexagon_c_1">Center X</label>
+							<label for="hexagon_c_1">Centro X</label>
 						</b-row>
 						<b-row>
 							<b-form-input id="hexagon_c_1" style="" type="number" v-model="hexagon.c_1" placeholder="Center X"></b-form-input>
@@ -18,7 +15,7 @@
 				<b-col>
 					<b-container >
 						<b-row>
-							<label for="hexagon_c_2">Center Y</label>
+							<label for="hexagon_c_2">Centro Y</label>
 						</b-row>
 						<b-row>
 							<b-form-input for="hexagon_c_2" style="" type="number" v-model="hexagon.c_2" placeholder="Center X"></b-form-input>
@@ -36,7 +33,7 @@
 					</b-container>
 				</b-col>
 				<b-col class="pt-4">	
-					<b-button @click="send" variant="success">Button</b-button>
+					<b-button @click="send" variant="success">Aplicar</b-button>
 				</b-col>
 			</b-row>
 		</b-container>

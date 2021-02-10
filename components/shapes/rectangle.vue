@@ -3,12 +3,9 @@
 		<b-container>
 			<b-row class="text-left">
 				<b-col>
-					<h3 class="mt-4">Rectangle</h3>
-				</b-col>
-				<b-col>
 					<b-container>
 						<b-row>
-							<label for="rectangle_c_1">Vertice_a x</label>
+							<label for="rectangle_c_1">Vertice_a X</label>
 						</b-row>
 						<b-row>
 							<b-form-input id="rectangle_c_1" style="" type="number" v-model="rectangle.c_1" placeholder="Center X"></b-form-input>
@@ -18,7 +15,7 @@
 				<b-col>
 					<b-container >
 						<b-row>
-							<label for="rectangle_c_2">Vertice_a y</label>
+							<label for="rectangle_c_2">Vertice_a Y</label>
 						</b-row>
 						<b-row>
 							<b-form-input for="rectangle_c_2" style="" type="number" v-model="rectangle.c_2" placeholder="Center X"></b-form-input>
@@ -28,7 +25,7 @@
 				<b-col>
 					<b-container>
 						<b-row>
-							<label for="rectangle_c_3">Vertice_b x</label>
+							<label for="rectangle_c_3">Vertice_b X</label>
 						</b-row>
 						<b-row>
 							<b-form-input  for="input-none" style="" type="number" v-model="rectangle.c_3" placeholder="Center X"></b-form-input>
@@ -38,7 +35,7 @@
 				<b-col>
 					<b-container>
 						<b-row>
-							<label for="rectangle_c_3">Vertice_b y</label>
+							<label for="rectangle_c_3">Vertice_b Y</label>
 						</b-row>
 						<b-row>
 							<b-form-input for="input-none" style="" type="number" v-model="rectangle.c_4" placeholder="Center X"></b-form-input>
@@ -46,7 +43,7 @@
 					</b-container>
 				</b-col>
 				<b-col class="pt-4">	
-					<b-button @click="send" variant="success">Button</b-button>
+					<b-button @click="send" variant="success">Aplicar</b-button>
 				</b-col>
 			</b-row>
 		</b-container>

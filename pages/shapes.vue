@@ -1,21 +1,21 @@
 <template>
 	<div>
 		<vo-header></vo-header>
-		<vo-filter></vo-filter>
+		<vo-shapes></vo-shapes>
 		<vo-footer></vo-footer>
 	</div>
 </template>
 <script>
 import VoHeader from '../components/header-vo.vue'
 import VoFooter from '../components/footer-vo.vue'
-import VoFilter from '../components/exercise-one.vue'
-  
+import VoShapes from '../components/exercise-two.vue'
+
 export default {
-	name: 'PageIndex',
+	name: 'PageShapes',
 	components: {
 		VoHeader,
 		VoFooter,
-		VoFilter
+		VoShapes
 	}
 }
 </script>
