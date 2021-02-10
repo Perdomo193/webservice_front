@@ -31,7 +31,7 @@ Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se t
 
 <h3 align="center">Figura 2 Vista Ejercicio 1</h3>
 
-<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_15.png" alt="build status"></img></a></p>
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_21.png" alt="build status"></img></a></p>
 
 En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a procesar, como se muestra en la Figura 3, 4, 5 y 6. Luego se ingresan las coordenadas de la region a procesar: 
 
