@@ -23,7 +23,7 @@ El framework `Vue JS` es implementado en el desarrollo front del servicio web, i
 
 ## Vistas
 
-Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Exercise 1 referido al ejercicio 1, y el boton Exercise 2 referido al ejercicio 2. En la ventana Exercise 1 se da click en `Browse` y se selecciona la imagen a procesar. En el selector se define el tipo de procesamiento a aplicar sobre la imagen, como se muestra en la Figura 2. 
+Se tiene un menu de navegación, como se muestra en la Figura 1. En el menu se tiene el boton Ejercicio 1 referido al ejercicio 1, y el boton Exercise 2 referido al ejercicio 2. En la ventana Ejercicio 1 se da click en `Browse` y se selecciona la imagen a procesar. En el selector se define el tipo de procesamiento a aplicar sobre la imagen, como se muestra en la Figura 2. 
 
 <h3 align="center">Figura 1 Vista Ejercicio 1</h3>
 
@@ -43,7 +43,7 @@ En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a pro
 
 `Rectangulo`: Se ingresa el valor del vertice superior izquierdo de la region en `Vertice_aX` para el eje X y `Vertice_aY` para el eje Y. Se ingresa el valor del vertice inferior derecho de la region en `Vertice_bX` para el eje X y `Vertice_bY` para el eje Y.
 
-Luego de ingresar los valores de las coordenadas, se da click en `Botton`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
+Luego de ingresar los valores de las coordenadas, se da click en `Aplicar`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
 
 <h3 align="center">Figura 3 Vista Ejercicio 2</h3>
 
