@@ -45,9 +45,21 @@ En la ventana Exercise 2 se da click en `Browse` y se selecciona la imagen a pro
 
 Luego de ingresar los valores de las coordenadas, se da click en `Botton`, y con ello se ejecuta el procesamiento de a imagen y se muestra esta en el navegador.
 
-<h3 align="center">Figura 3 Vista Ejercicio 3</h3>
+<h3 align="center">Figura 3 Vista Ejercicio 2</h3>
 
-<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_nine.png" alt="build status"></img></a></p>
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_11.png" alt="build status"></img></a></p>
+
+<h3 align="center">Figura 4 Vista Ejercicio 2</h3>
+
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_12.png" alt="build status"></img></a></p>
+
+<h3 align="center">Figura 5 Vista Ejercicio 2</h3>
+
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_13.png" alt="build status"></img></a></p>
+
+<h3 align="center">Figura 6 Vista Ejercicio 2</h3>
+
+<p align="center"><a href="#"><img width="850px" height="auto" src="https://github.com/Perdomo193/images/blob/master/page_14.png" alt="build status"></img></a></p>
 
 ## Ejercicios
 
